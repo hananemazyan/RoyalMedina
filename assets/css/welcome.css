@@ -1,0 +1,43 @@
+/* welcome.css */
+
+/* Styles for the welcome section */
+.welcome-section {
+
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #752d2d;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    color: #f4f3f3;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Call-to-action link styles */
+.welcome-section a.explore-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 70px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.welcome-section a.explore-link:hover {
+    background-color: #e64a19;
+}

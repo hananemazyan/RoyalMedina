@@ -1,0 +1,233 @@
+body {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(9, 9, 9) 100%);
+    
+}
+
+.container {
+    width:90%;
+    max-width: 700px; /* Adjusted for better responsiveness */
+    text-align: center;
+    padding-top: 100px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+    color: #eee;
+}
+
+svg {
+    position: relative;
+    width: 20px;
+    color: #eee;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart span {
+    position: absolute;
+    background-color: rgb(255, 64, 0);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+
+.container .title {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: #eee;
+    font-family: 'montserrat';
+    text-align: left;
+}
+
+.listProduct .item img {
+    width: 100%; /* Adjusted for better responsiveness */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #131313;
+    padding: 20px;
+    border-radius: 20px;
+    color: #eee;
+    text-transform: uppercase;
+    font-family: 'lato';
+    font-weight: bolder;
+}
+
+.listProduct .item:hover {
+    background-color: #0e0c0be4;
+    transform: scale(1.09);
+}
+
+.listProduct .item h2 {
+    padding-top: 15px;
+    font-weight: 800;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    padding-top: 10px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.listProduct .item button {
+    background-color: #f5911f;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: 'lora';
+}
+
+/* cart */
+.cartTab {
+    width: 400px;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(9, 9, 9) 100%);
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab button {
+    background-color: #e2851a;
+    border: none;
+    font-weight: 500px;
+    cursor: pointer;
+    color: #090808;
+    font-family: 'raleway';
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cartTab .close {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(9, 9, 9) 100%);
+    color: #eee;
+    font-family: 'raleway';
+}
+
+.listCart .item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #eee;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.listProduct .item img {
+    width: 90%;
+    filter: drop-shadow(0 20px 20px #0009);
+    transition: transform 0.3s ease-in-out; /* Ajout de la transition au survol */
+}
+
+.listProduct .item:hover img {
+    transform: scale(1.1); /* Zoom au survol */
+    filter: brightness(80%);
+}
+
+/* Bouton avec effet d'agrandissement */
+.listProduct .item button {
+    background-color: #eee9e0;
+    color: #000000;
+    border: none;
+    padding: 8px 15px; /* Ajustement de la taille du bouton */
+    margin-top: 15px; /* Espacement du haut */
+    border-radius: 25px; /* Arrondi du bouton */
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Ajout de la transition pour le bouton */
+    font-family: 'lora';
+}
+
+/* Effet de survol sur le bouton */
+.listProduct .item button:hover {
+    background-color: #fcf8f6; /* Couleur différente au survol */
+    color: #a95026; /* Couleur de texte différente au survol */
+    transform: scale(1.05); /* Légèrement plus grand au survol */
+}

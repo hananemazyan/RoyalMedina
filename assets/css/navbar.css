@@ -1,0 +1,350 @@
+
+ /* Lora */
+ @font-face {
+    font-family: 'Lora';
+    src: url('/RoyalMedina/assets/fonts/lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1 999; 
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('/RoyalMedina/assets/fonts/lora/Lora-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1 999;
+    font-style: normal;
+}
+
+/* Lato */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato-Regular'), url('/RoyalMedina/assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Lato-Bold'), url('/RoyalMedina/assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('/RoyalMedina/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Montserrat-Bold'), url('/RoyalMedina/assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Oswald */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oswald-Regular'), url('/RoyalMedina/assets/fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Playfair Display */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PlayfairDisplay-Regular'), url('/Elyane-Meraki-website/assets/fonts/playfair-display/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PlayfairDisplay-Bold'), url('/Elyane-Meraki-website/assets/fonts/playfair-display/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+/* Raleway */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway-Regular'), url('/Elyane-Meraki-website/assets/fonts/raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Raleway-Bold'), url('/Elyane-Meraki-website/assets/fonts/raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+/* delievry msg */
+
+.delivery-message {
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: 12px; 
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: #fae7c0;
+    color: #131313;
+    padding: 10px  ;
+    text-align: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s;
+    z-index: 1001; 
+  }
+  .delivery-message:hover {
+    background-color: #f4ddae; /* Change the background color on hover */
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjusted right position */
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: none;
+    stroke: #d1d1d1;
+    stroke-width: 1; 
+    transition: stroke 0.3s, width 0.3s, height 0.3s;
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+
+}
+/* Resetting some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 32px;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: #ffffff; /* Add a background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navmenu {
+    display: flex;
+    list-style: none; /* Remove default list styles */
+}
+
+.navmenu li {
+    margin-right: 30px;
+    position: relative; /* Required for submenu positioning */
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.42s ease;
+}
+
+.navmenu a:hover {
+    color: rgb(255, 38, 0);
+}
+
+/* Submenu */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #e2e1dd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    margin-top: 15px;
+}
+
+.navmenu li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 15px 20px;
+    display: block; /* Make submenu items block-level */
+    width: 100%;
+}
+
+/* Nav Icons */
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon a {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 24px;
+}
+
+
+
+/* Adjusted search, user, and cart icons */
+.bx-search,
+.bx-user-circle,
+.bx-cart {
+    font-size: 24px;
+}
+
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right:  20px ;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.5);
+    color: rgb(255, 38, 0);
+}
+
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/*reponsive css */
+
+
+
+@media (max-width: 1040px) {
+    header {
+        padding: 12px 20px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .home .media-icons {
+        right: 15px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    header .navigation .navigation-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navigation .navigation-items a:before {
+        background: #222;
+        height: 5px;
+    }
+
+    header .navigation .navigation-items {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+}
+
+@media (max-width:890px) {
+    header{
+        padding:20px 3%;
+        transition: .4s;
+    }
+}
+
+
+@media (max-width:750px) {
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #fff1bd;
+        display: flex;
+        flex-direction: column;
+        padding: 120px 30px;
+        transition: all 0.42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+
+    .navmenu.open{
+        right:0;
+
+    }
+}

@@ -1,0 +1,62 @@
+/* subscription.css */
+
+.subscription-section {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.subscription-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subscription-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.subscription-form {
+    display: flex; /* Use flex display for the container */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.subscription-form input {
+    width: calc(70% - 10px);
+    margin-right: 10px; /* Add margin between input and button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription-form button {
+    width: calc(30% - 20px);
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .subscription-form {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .subscription-form input,
+    .subscription-form button {
+        width: 100%; /* Full width for both input and button on smaller screens */
+        margin: 10px 0 10px 0; /* Adjust margin for spacing on smaller screens */
+    }
+}
