@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoyalMedina | Collection Caftan </title>
-    <link rel="stylesheet" href="/RoyalMedina/assets/css/products.css">
-    <link rel="stylesheet" href="/RoyalMedina/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/products.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 </head>
@@ -21,9 +21,9 @@
     <!--navigation -->
     <nav>
         <header>
-            <a href="/RoyalMedina/pages/index.html" class="logo">ROYAL MEDINA </a>
+            <a href="/pages/index.html" class="logo">ROYAL MEDINA </a>
             <ul class="navmenu">
-                <li><a href="/RoyalMedina/pages/collection.html">COLLECTIONS</a>
+                <li><a href="/pages/collection.html">COLLECTIONS</a>
                     <ul class="submenu">
                         <li><a href="#">CAFTAN</a></li>
                         <li><a href="#">JEWELRY</a></li>
@@ -31,12 +31,12 @@
                     </ul>
                 </li>
 
-                <li><a href="/RoyalMedina/pages/ourstory.html">STORY</a></li>
+                <li><a href="/pages/ourstory.html">STORY</a></li>
 
                 <li><a href="#">CONTACT</a>
                     <ul class="submenu">
-                        <li><a href="/RoyalMedina/pages/customercare.html">CUSTOMER CARE</a></li>
-                        <li><a href="/RoyalMedina/pages/">RETURNS</a></li>
+                        <li><a href="/pages/customercare.html">CUSTOMER CARE</a></li>
+                        <li><a href="/pages/">RETURNS</a></li>
                     </ul>
                 </li>
                 <li><a href="#">BLOG</a></li>
@@ -44,7 +44,7 @@
 
             <div class="nav-icon">
                 <a href="#"><i class='bx bx-search'></i></a>
-                <a href="/RoyalMedina/pages/login.html"><i class='bx bx-user-circle' ></i></a>
+                <a href="/pages/login.html"><i class='bx bx-user-circle' ></i></a>
                 <a href="#"><i class='bx bx-cart' ></i></a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
@@ -123,8 +123,8 @@
 <div class="copyright">
     <p>&copy; 2023 Your Company. All rights reserved.</p>
 </div>
-<script src="/RoyalMedina/assets/js/main.js"></script>
-<script src="/RoyalMedina/assets/js/app.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/app.js"></script>
 
 </body>
 </html>

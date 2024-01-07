@@ -1,5 +1,8 @@
-/* Home Section */
+/*____________________Home Section______________________*/ 
+
+/* Main container styling */
 .home {
+   
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -7,9 +10,10 @@
     justify-content: center;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
-    transition: background 0.5s ease; /* Added transition for background */
+    transition: background 0.5s ease; 
 }
 
+/* Overlay styling */
 .home:before {
     z-index: 777;
     content: '';
@@ -27,14 +31,15 @@
     width: 70%;
     margin-top: 50px;
     display: none;
-    transition: transform 0.5s ease; /* Added transition for text */
+    transition: transform 0.5s ease;
 }
 
 .home .content.active {
     display: block;
-    transform: translateY(20px); /* Adjusted text position */
+    transform: translateY(20px);
 }
 
+ /*_____Heading styling____________ */
 .home .content h1 {
     font-size: 4em;
     font-weight: 900;
@@ -77,6 +82,7 @@
     transition: 0.5s ease;
 }
 
+/*  icon styling */
 .home .media-icons a {
     color: #fff;
     font-size: 1.6em;
@@ -92,7 +98,9 @@
     color: #555;
 }
 
+ /* Background image styling */
 .home img {
+   
     z-index: 000;
     position: absolute;
     top: 0;
@@ -102,6 +110,10 @@
     object-fit: cover;
 }
 
+
+/* __________________ Navbar______________________________*/
+
+ /* Navigation dots container styling */
 .slider-navigation {
     z-index: 888;
     position: relative;
@@ -112,7 +124,9 @@
     margin-bottom: 12px;
 }
 
+/* Navigation dot styling */
 .slider-navigation .nav-btn {
+  
     width: 12px;
     height: 12px;
     background: #fff;
@@ -134,7 +148,10 @@
     transform: scale(1.2);
 }
 
+ /* _______________Image slide styling_______________ */
+
 .img-slide {
+   
     position: absolute;
     width: 100%;
     clip-path: circle(0% at 0 50%);
@@ -146,6 +163,11 @@
     transition-property: clip-path;
 }
 
+
+/*_________________________ responsive ___________________________________ */
+
+/* Responsive styling for medium screens */
+
 @media (max-width: 1040px) {
     section {
         padding: 100px 20px;
@@ -155,6 +177,7 @@
     }
 
     .menu-btn {
+        /* Menu button styling */
         background: url(menu.png) no-repeat;
         background-size: 30px;
         background-position: center;
@@ -165,6 +188,7 @@
     }
 
     .menu-btn.active {
+        /* Active menu button styling */
         z-index: 999;
         background: url(close.png) no-repeat;
         background-size: 25px;
@@ -173,8 +197,11 @@
     }
 }
 
+/* Responsive styling for small screens */
+
 @media (max-width: 560px) {
     .home .content h1 {
         font-size: 3em;
         line-height: 60px;
-    }}
+    }
+}

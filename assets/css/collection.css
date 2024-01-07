@@ -1,4 +1,4 @@
-
+/* ______________________Collection Section_______________________ */
 .collection-section {
     flex: 1;
     margin-right: 20px;
@@ -18,21 +18,22 @@
     margin-bottom: 20px;
 }
 
-/* Style the image block */
+/* Styling for the collection image block */
 .image-block {
     display: flex;
     justify-content: space-around;
-    position: relative; /* Ensure proper positioning for the next/prev buttons */
+    position: relative; 
 }
 
-/* Style the collection images within Swiper */
+/* Style the collection images within Swiper */ 
+/* Styling for individual collection images */
 .collection-image {
     width: 100%;
-    height: 200px; /* Set a fixed height for consistency */
+    height: 200px; 
     background-size: cover;
     background-position: center;
-    border-radius: 8px; /* Add rounded corners for a nice effect */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    border-radius: 8px; /* Add rounded corners */
+    transition: transform 0.3s ease-in-out; /* Add a transition effect */
 }
 
 /* Apply a scale effect on hover */

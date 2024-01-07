@@ -37,20 +37,20 @@
     
     <!-- Delivery message -->
     <div class="delivery-message" id="deliveryMessage">
-        <p>FREE LIVRAISON IN MOROCCO OVER 1500 DH</p>
+        <p>FREE DELIVERY IN MOROCCO OVER 1500 DH</p>
         <span id="closeIcon" class="close-icon">X</span>
     </div>
 
-    <!--navigation -->
+    <!-- navigation -->
     <nav>
         <header>
             <a href="/pages/index.php" class="logo">ROYAL MEDINA </a>
             <ul class="navmenu">
                 <li><a href="/pages/collection">COLLECTIONS</a>
                     <ul class="submenu">
-                        <li><a href="#">CAFTAN</a></li>
-                        <li><a href="#">JEWELRY</a></li>
-                        <li><a href="#">SHOES</a></li>
+                        <li><a href="/pages/caftan/caftan.php">CAFTAN</a></li>
+                        <li><a href="/pages/jewelry/jewelry.php">JEWELRY</a></li>
+                        <li><a href="/pages/jewelry/shoes.php">SHOES</a></li>
                     </ul>
                 </li>
 
@@ -76,8 +76,8 @@
 
     <!--banner-->
     <section class="home">
-        <img data-lazyloaded="1" src="/assets/images/banner/Moroccan Caftan.jpg" decoding="async" class="img-slide active"  ></img>
-        <img data-lazyloaded="1" src="/assets/images/banner/Ornements marocains 🕊️.jpg" decoding="async" class="img-slide"  ></img>
+        <img data-lazyloaded="1" src="/assets/images/banner/ai/caftan.png" decoding="async" class="img-slide active"  ></img>
+        <img data-lazyloaded="1" src="/assets/images/banner/ai/jewelry.png" decoding="async" class="img-slide"  ></img>
         <img data-lazyloaded="1" src="/assets/images/banner/Moroccan Plain Pointed Babouche Slippers.jpg" decoding="async" class="img-slide"  ></img>
         <div class="content active">
             <h1> Wonderful<br><span>Caftan</span></h1>
