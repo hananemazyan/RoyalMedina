@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoyalMedina | Collection Caftan </title>
+        <!-- External CSS -->
     <link rel="stylesheet" href="/assets/css/products.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -62,9 +64,11 @@
             </div> 
         </div>
       
+        <!-- Product List -->
         <div class="listProduct">
 
         </div>
+         <!-- Cart Tab -->
     <div class="cartTab">
         <h1>Shopping Cart</h1>
         <div class="listCart">
