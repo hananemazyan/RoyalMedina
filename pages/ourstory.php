@@ -103,7 +103,7 @@
                 Our commitment to local craftsmanship and Moroccan artisans is reflected in close partnerships with talented craftsmen, ensuring outstanding quality products made with passion and expertise.
                 
                 Join us in this adventure where beauty, history, and culture converge. With RoyalMedina, immerse yourself in a world where tradition seamlessly blends with modernity to provide a unique and enchanting experience of Moroccan fashion.</p>
-            <img src="/assets/images/logo_try-removebg-preview.png" alt="Notre Société">
+            <img src="/assets/images/logo_try/RoyalMedina1.png" alt="Notre Société">
         </div>
     </div>
 </section>

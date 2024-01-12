@@ -33,11 +33,11 @@
                     </ul>
                 </li>
 
-                <li><a href="/pages/ourstory.html">STORY</a></li>
+                <li><a href="/pages/ourstory.php">STORY</a></li>
 
                 <li><a href="#">CONTACT</a>
                     <ul class="submenu">
-                        <li><a href="/pages/customercare.html">CUSTOMER CARE</a></li>
+                        <li><a href="/pages/customercare.php">CUSTOMER CARE</a></li>
                         <li><a href="/pages/">RETURNS</a></li>
                     </ul>
                 </li>

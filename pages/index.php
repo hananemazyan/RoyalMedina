@@ -63,7 +63,7 @@
              <!-- Menu de navigation -->
                 <li><a href="/pages/collection">COLLECTIONS</a>
                     <ul class="submenu">
-                        <li><a href="#">CAFTAN</a></li>
+                        <li><a href="\pages\Caftan\caftan.php">CAFTAN</a></li>
                         <li><a href="#">JEWELRY</a></li>
                         <li><a href="#">SHOES</a></li>
                     </ul>
@@ -92,8 +92,8 @@
    <!-- Banner Section -->
 
     <section class="home">
-        <img data-lazyloaded="1" src="/assets/images/banner/Moroccan Caftan.jpg" decoding="async" class="img-slide active"  ></img>
-        <img data-lazyloaded="1" src="/assets/images/banner/Ornements marocains 🕊️.jpg" decoding="async" class="img-slide"  > </img>
+    <img data-lazyloaded="1" src="/assets/images/banner/ai/caftan.png" decoding="async" class="img-slide active"  ></img>
+        <img data-lazyloaded="1" src="/assets/images/banner/ai/jewelry.png" decoding="async" class="img-slide"  ></img>
         <img data-lazyloaded="1" src="/assets/images/banner/Moroccan Plain Pointed Babouche Slippers.jpg" decoding="async" class="img-slide"  ></img>
         <div class="content active">
          <!-- ... (Banner with slides for caftan) ... -->

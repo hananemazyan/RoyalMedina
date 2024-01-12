@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--   Link To CSS Style Sheet   -->
+    <!-- *******  Link To CSS Style Sheet  ******* -->
     <link rel="stylesheet" type="text/css" href="/assets/css/customercare.css">
     
-    <!--    Icons Link   -->
+    <!-- *******   Icons Link  ******* -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!--   Link To Google Fonts    -->
+    <!-- *******  Link To Goggle Fonts  *******  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,6 @@
             <header>
                 <a href="/RoyalMedina/pages/index.php" class="logo">ROYAL MEDINA </a>
                 <ul class="navmenu">
-                <!-- Navigation Links -->
                     <li><a href="/RoyalMedina/pages/collection.php">COLLECTIONS</a>
                         <ul class="submenu">
                             <li><a href="#">CAFTAN</a></li>
@@ -36,8 +35,9 @@
                             <li><a href="#">SHOES</a></li>
                         </ul>
                     </li>
-                    <li><a href="/pages/ourstory.php">STORY</a>
-                    </li>
+    
+                    <li><a href="/pages/ourstory.php">STORY</a></li>
+    
                     <li><a href="#">CONTACT</a>
                         <ul class="submenu">
                             <li><a href="/pages/customercare.php">CUSTOMER CARE</a></li>
@@ -46,8 +46,7 @@
                     </li>
                     <li><a href="#">BLOG</a></li>
                 </ul>
-
-        <!-- Navigation Icons -->
+    
                 <div class="nav-icon">
                     <a href="#"><i class='bx bx-search'></i></a>
                     <a href="/pages/login.php"><i class='bx bx-user-circle' ></i></a>
@@ -59,9 +58,7 @@
         
         <div class="container">
             <main class="row">
-            <!-- Left Section with Contact Information -->
                 <section class="col left">
-                 <!-- ... (Contact information) ... -->
                     <div class="contactTitle">
                         <h2>Get In Touch</h2>
                         <p>Fill out the form to get more informations about orders and products or to book an appointement </p>
@@ -110,11 +107,10 @@
                         
                         </div>
                     </section>
-                    <!-- Right Section with Contact Form -->
+                    
         <section class="col right">
         <form class="messageForm" action="/assets/php/customercare.php" method="post">
-<!-- Form Fields -->
-                <!-- ... (Form fields for name, email, subject, message) ... -->
+
 <div class="inputGroup halfWidth">
     <input type="text" name="name" required="required"> <!-- Added name="name" -->
     <label>Your Name</label>
@@ -148,7 +144,6 @@
 
     <!-- footer -->
     <div class="footer">
-    <!-- ... (Footer content) ... -->
         <div class="col-1">
             <h3>USEFUL LINKS</h3>
             <a href="#">Collections</a>
@@ -179,7 +174,6 @@
         <div class="col-3">
             <h3>CONTACT</h3>
             <p>Angle Boulevard Sidi Abderrahmane <br> Casablanca, Maroc</p>
-           <!-- Icônes sociales -->
             <div class="social-icons">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -193,7 +187,7 @@
     <div class="copyright">
         <p>&copy; 2023 Your Company. All rights reserved.</p>
     </div>
-    <!-- Main JavaScript File -->
 <script src="/RoyalMedina/assets/js/main.js"></script>
+
 </body>
 </html>
